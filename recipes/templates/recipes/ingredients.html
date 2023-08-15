@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ingredients</title>
+</head>
+<body>
+    <table border="2">
+        <th>Id</th>
+        <th>Name</th>
+        {% for ingred in ingredients %}
+        <tr>
+            <td>{{ingred.id}}</td>
+            <td>{{ingred.name}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+    
+</body>
+</html>

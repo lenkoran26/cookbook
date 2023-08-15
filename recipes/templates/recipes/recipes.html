@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Recipes</title>
+</head>
+<body>
+    <table border="2">
+        <th>Id</th>
+        <th>Name</th>
+        <th>Tags</th>
+        <th>Ingredients</th>
+        {% for data in recipe %}
+        <tr>
+            <td>{{recipe.id}}</td>
+            <td>{{recipe.name}}</td>
+            <td>{{recipe.tags.name}}</td>
+            <td>{{recipe.ingredients.name}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+    
+</body>
+</html>
